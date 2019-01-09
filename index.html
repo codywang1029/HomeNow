@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  a:link, a:visited {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    font-family: "Arial", Sans-serif;
+    margin-top:20px;
+    text-decoration: none;
+
+  }
+ a:hover{
+    color:gold;
+ }
+  div.bot {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom:  30px;
+    padding-top: 50px;
+    background-color:Turquoise ;
+}
+  div.mid {
+    margin:auto;
+    width: 60%;
+    text-align: center;
+    //border: 3px solid white;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: "Arial", Sans-serif;
+    background:#fff;
+    opacity:0.9;
+  }
+  input[type=search] {
+    width: 40%;
+    padding: 10px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid Cyan;
+    border-radius: 4px;
+  }
+  input[type=text] {
+    width: 10%;
+    padding: 10px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid Cyan;
+    border-radius: 4px;
+  }
+
+  input[type=reset]{
+    background-color: MediumTurquoise ;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 15px;
+    width:30%;
+    font-family: "Arial", Sans-serif;
+  }
+  input[type=submit]{
+    background-color: MediumTurquoise ;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 15px;
+    width:30%;
+    font-family: "Arial", Sans-serif;
+  }
+  
+  input[type=submit]:hover{
+      background-color:DarkTurquoise;
+  }
+  input[type=reset]:hover{
+      background-color:DarkTurquoise;
+  }
+  select {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 12%;
+      padding: 5px 10px;
+      margin: 8px 10px;
+      font-size: 13px;
+      box-sizing: border-box;
+      border: 2px solid Cyan;
+      border-radius: 4px;
+      font-family: "Arial", Sans-serif;
+  }
+  button {
+    background-color: MediumTurquoise ;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Arial", Sans-serif;
+  }
+  button:hover {
+    background-color: DarkTurquoise;
+  }
+   p {
+     text-align: center;
+     color: WhiteSmoke;
+     font-size: 80px;
+     margin: auto;
+     font-family: "Arial", Sans-serif;
+   }
+   input {
+     width: 10%
+
+     padding: 12px 20px;
+     margin: 8px 0;
+   }
+  html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+   </style>
+</head>
+<br><br>
+<body>
+    <br><br><br>
+<p>HomeNow</p>
+<br><br><br><br>
+<div class=mid>
+<br>
+<form name="myForm" action="/user_input.php" method="post">
+Number of Bedrooms:
+<select name="Number of Bedroom">
+    <option value="any"> Any </option>
+    <option value="1" > One </option>
+    <option value="2"> Two </option>
+    <option value="3"> Three </option>
+    <option value="4"> Four </option>
+    <option value="more"> More </option>
+</select>
+Number of Bathrooms:
+<select name="Number of Bathrooms">
+    <option value="any"> Any </option>
+    <option value="1"> One </option>
+    <option value="2"> Two </option>
+    <option value="more"> More </option>
+</select>
+Monthly Rent:
+<select name="Monthly Rent">
+    <option value="any"> Any </option>
+    <option value="500"> <$500 </option>
+    <option value="650"> $500-$650 </option>
+    <option value="800"> $650-$800 </option>
+    <option value="1000"> $800-$1000 </option>
+    <option value="1000+"> >$1000 </option>
+</select><br>
+
+<input type="reset" value = "Reset">
+<input type="submit" value="Submit">
+</form>
+</div>
+<div class="bot">
+  <form>
+  <input type="search" id="mySearch" name="q" placeholder="Search the apartment name... ">
+  <button>Search</button>
+</form>
+<br>
+<a href=login.html>Developer LogIn</a>
+  </div>
+</body>
+</html>
